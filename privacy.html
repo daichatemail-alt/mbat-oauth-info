@@ -1,18 +1,11 @@
 <!doctype html>
 <html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Privacy — MBAT Gmail Read Only</title>
-<body><main>
-<h1>Privacy policy</h1><p>MBAT Gmail Read Only · Updated 28 October 2026</p>
-<p>This policy describes the personal Windows desktop tool's Gmail ingestion. It is intended only for its operator's dedicated Gmail account, dai.mbat.leads@gmail.com.</p>
-<h2>Access and purpose</h2>
-<p>The tool requests only https://www.googleapis.com/auth/gmail.readonly. It searches and reads selected forwarded promotional messages to extract offer terms, preserve provenance and distinguish original sender and date from forwarding details. It records message identifiers, relevant message content, extracted terms, ambiguity and assessment history for auditing and manual review. It does not change email or open external email links or attachments.</p>
-<h2>Storage and sharing</h2>
-<p>The normal ingestion pipeline stores its evidence and refresh credentials locally using Windows user-bound DPAPI encryption and restricted file permissions. Access tokens are held in memory. Gmail data is obtained from Google over HTTPS. The ingestion pipeline does not send message content to AI services, advertising services, bookmakers or exchanges, and does not sell Gmail data. Real email, identifiers and credentials are excluded from source control and automated CI tests. Operator-created copies and backups require separate protection and retention controls.</p>
-<h2>Retention and control</h2>
-<p>The evidence store has a fixed retention lease, normally 30 days, configurable from 1 to 90 days. Expiry blocks further collection; it does not automatically delete stored data. The operator must explicitly retire the expired managed store. This does not delete email in Gmail, independently saved copies, backups or refresh credentials. Credentials remain locally until removed by the operator; Google permission can be revoked through Google Account settings. Revocation stops future authorized access but does not erase existing local evidence.</p>
-<p>Device and backup encryption must be checked separately. Copying Windows user-bound encrypted files alone is not a verified recovery method on another computer.</p>
-<h2>Google user data</h2>
+<body><main><h1>Privacy policy</h1><p>MBAT Gmail Read Only · Updated 28 October 2026</p>
+<p>This personal desktop tool requests Gmail read-only access (gmail.readonly) to search and read selected promotional emails in its operator's dedicated account. It stores relevant message content, identifiers and extracted information for manual review and audit. It does not send, modify or delete email.</p>
+<p>Email data and saved authorization credentials are encrypted locally using Windows user-bound protection and restricted file permissions. The ingestion pipeline does not sell or share email data with third parties, upload it to AI services, or include it in source code or automated tests.</p>
+<p>Stored email evidence normally has a 30-day retention lease. Expiry stops collection; the operator must explicitly delete the expired managed store. Credentials remain until removed. Google access can be revoked in Google Account settings; this does not erase existing local data. Independently saved copies and backups require separate deletion.</p>
 <p>The tool's use and transfer of information received from Google APIs will adhere to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including its Limited Use requirements.</p>
-<h2>Contact</h2><p>For access, deletion or privacy questions, contact the operator at <a href="mailto:dai.mbat.leads@gmail.com">dai.mbat.leads@gmail.com</a>.</p>
-<h2>Information website hosting</h2><p>If these information pages are hosted on GitHub Pages, GitHub logs visitor IP addresses for security purposes. The pages themselves contain no analytics scripts, advertising, forms or Gmail sign-in. See <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub's privacy statement</a> for the hosting provider's practices.</p>
+<p>This information site has no analytics or forms. GitHub Pages logs visitor IP addresses for security; see <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub's privacy statement</a>.</p>
+<p>Support, privacy and deletion enquiries: <a href="mailto:dai.mbat.leads@gmail.com">dai.mbat.leads@gmail.com</a>.</p>
 <p><a href="index.html">Home</a> · <a href="terms.html">Terms of use</a></p>
 </main></body></html>
